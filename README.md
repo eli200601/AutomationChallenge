@@ -15,7 +15,7 @@ run the following commands:
   
 - Precondition: You need MySQL server installed and running with user root:root
 - DB must have 'book_list' database
-- 'book_list' database must have books table
+- 'book_list' database must have 'books' table
 
 ----------------------------------------------------------------------------------
 to run via container:
