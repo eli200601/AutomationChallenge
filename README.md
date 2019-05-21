@@ -24,3 +24,4 @@ to run in a container:
   * clone the git repository
   * $ docker build -t automation_challenge .
   * $ docker run -i -t --entrypoint bash automation_challenge
+  * run the following shell command: 'python3 main.py'
