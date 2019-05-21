@@ -13,12 +13,14 @@ run the following commands:
   * $ pip install -r requirements.txt
   * $ python main.py
   
-- Precondition: You need MySQL server installed and running with user root:root
-- DB must have 'book_list' database
-- 'book_list' database must have 'books' table
+** Precondition: You need MySQL server installed and running with user root:root
+
+** DB must have 'book_list' database
+
+** 'book_list' database must have 'books' table
 
 ----------------------------------------------------------------------------------
-to run via container:
+to run in a container:
   * clone the git repository
   * $ docker build -t automation_challenge .
   * $ docker run -i -t --entrypoint bash automation_challenge
