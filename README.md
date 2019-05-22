@@ -2,12 +2,12 @@
 Automation Challenge with docker
 ---------------------------------
 
-This application use Selenium to access amazon.com
+This application use Selenium to access amazon.com.
 the script take the first 4 result screen items.
 and save it into a MySQL database
 
 
-To run script from windows CMD, from the repository folder:
+run script from windows CMD, from the repository folder:
 * $ docker-compose up (wait until its up)
 * $ python main.py
 
