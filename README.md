@@ -17,3 +17,4 @@ To run script from windows CMD, from the repository folder:
 * $ pip install -r requirements.txt
 * You must config in docker > settings > Shared Drives - the drive you running from, 
   Than reset docker service
+s
