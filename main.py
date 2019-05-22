@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 from ui_lib.functional import HomeScreenFunctionality
 from ui_lib.functional import ResultsScreenFunctionality
-from ui_lib.functional import BookItemFunctionality
 from ui_lib.functional import CartScreenFunctionality
+from ui_lib.functional import BookItemFunctionality
 from utils import selenium, db
 
 
@@ -22,9 +22,8 @@ if __name__ == "__main__":
 
     results_items = results_screen.get_n_pages_results_objects(4)
 
-    item_to_click = -3
-
-    results_screen.focus_by_element(results_items[item_to_click].element)
+    item_to_click = results_screen.get_index_of_last_book_item(results_items)
+    results_screen.click_book_in_index(results_items, item_to_click)
     book_screen.click_add_to_cart()
     results_screen.action_bar.click_cart()
 

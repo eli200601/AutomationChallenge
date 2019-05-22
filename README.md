@@ -3,22 +3,17 @@ Automation Challenge with docker
 ---------------------------------
 
 This application use Selenium to access amazon.com
-the script take the first 4 result items.
+the script take the first 4 result screen items.
 and save it into a MySQL database
 
 
-To run script from windows:
-run the following commands:
-  * clone the git repository
-  * $ pip install -r requirements.txt
-  * $ python main.py
-  
-- Precondition: You need MySQL server installed and running with user root:root
-- DB must have 'book_list' database
-- 'book_list' database must have 'books' table
+To run script from windows CMD, from the repository folder:
+* $ docker-compose up (wait until its up)
+* $ python main.py
 
-----------------------------------------------------------------------------------
-to run via container:
-  * clone the git repository
-  * $ docker build -t automation_challenge .
-  * $ docker run -i -t --entrypoint bash automation_challenge
+  
+** Preconditions:
+* you must have chromedriver.exe define in PATH
+* $ pip install -r requirements.txt
+* You must config in docker > settings > Shared Drives - the drive you running from, 
+  Than reset docker service

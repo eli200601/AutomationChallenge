@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  mysql-dev:
+      image: mysql:8.0.16
+      container_name: mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: 'password'
+        MYSQL_DATABASE: 'book_list'
+        MYSQL_USER: 'user'
+        MYSQL_PASSWORD: 'password'
+      ports:
+        - '3306:3306'
+      volumes:
+        - ./schemas:/docker-entrypoint-initdb.d
+
+volumes:
+  schemas:

@@ -7,13 +7,10 @@ def get_chrome_options():
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--no-default-browser-check")
     chrome_options.add_argument("--no-first-run")
-    chrome_options.add_argument('--headless')
     chrome_options.add_argument("--disable-default-apps")
     chrome_options.add_argument("--ignore-ssl-errors=true")
     chrome_options.add_argument("--ssl-protocol=any")
     chrome_options.add_argument('--start-maximized')
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument("--disable-dev-shm-usage")
     return chrome_options.to_capabilities()
 
 

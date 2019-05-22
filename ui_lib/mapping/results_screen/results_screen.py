@@ -12,6 +12,6 @@ class ResultsScreenLocators(object):
         self.book_reviews = SeleniumElement(self._driver, Locator(LT.xpath, './/div[@class="a-section a-spacing-none a-spacing-top-micro"][1]//span[2]'))
         self.book_price = SeleniumElement(self._driver, Locator(LT.xpath, './/span[@class="a-price"]'))
         self.price_secondary = SeleniumElement(self._driver, Locator(LT.xpath, './/span[@class="a-color-base" or "a-size-small a-color-secondary"]'))
-
+        self.item_href = SeleniumElement(self._driver, Locator(LT.class_name, 'a-link-normal'))
         # Result page navigation bar
         self.navigation_bar = SeleniumElement(self._driver, Locator(LT.xpath, '//ul[@class="a-pagination"]//li', multi_item_=True))
