@@ -28,6 +28,9 @@ def insert_books_list_to_db(book_list):
             cursor.execute(sql,)
             result = cursor.fetchall()
             print('SELECT * FROM books:')
+            for row in result:
+                print(row)
+                print('')
             print(result)
     finally:
         connection.close()
